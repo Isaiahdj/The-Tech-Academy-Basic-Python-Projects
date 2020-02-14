@@ -76,7 +76,6 @@ def dbSelect():
         a = len(varTbl)
         i = 0
     conn.close()
-    print(a)
     print("\n\nThere are {} text files in this DataBase".format(a))
     while i < a:
         for item in varTbl:
@@ -84,10 +83,6 @@ def dbSelect():
             tbl = varTbl[i]
             print("\nFile #{} is: \n{}".format(b, item))
             i += 1
-            for item in varTbl:
-                b = i + 1
-                tbl = varTbl[i]
-                print("\nFile #{} is: \n{}".format(b, item))
 
 
     
