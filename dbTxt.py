@@ -17,7 +17,7 @@ def Start():
     conn = sqlite3.connect('txt.db')
     with conn:
         cur = conn.cursor()
-        cur.execute('DROP TABLE tbl_txtFiles')
+        cur.execute('DROP TABLE IF EXISTS tbl_txtFiles')
         print("\nDropping Table...")
         conn.commit()
     conn.close()
